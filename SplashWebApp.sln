@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashWebApp", "SplashWebApp\SplashWebApp.csproj", "{ACF482B8-A6D4-4B54-B4A8-720399774A73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SplashWebApp", "SplashWebApp\SplashWebApp.csproj", "{ACF482B8-A6D4-4B54-B4A8-720399774A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashWebApp.DAL", "SplashWebApp.DAL\SplashWebApp.DAL.csproj", "{8E4C41C5-1202-4727-A1CB-E10F679E59CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashWebApp.Logic", "SplashWebApp.Logic\SplashWebApp.Logic.csproj", "{2FB9A65B-9F4F-4A95-A110-63AD194A0709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{ACF482B8-A6D4-4B54-B4A8-720399774A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF482B8-A6D4-4B54-B4A8-720399774A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF482B8-A6D4-4B54-B4A8-720399774A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4C41C5-1202-4727-A1CB-E10F679E59CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4C41C5-1202-4727-A1CB-E10F679E59CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4C41C5-1202-4727-A1CB-E10F679E59CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4C41C5-1202-4727-A1CB-E10F679E59CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB9A65B-9F4F-4A95-A110-63AD194A0709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB9A65B-9F4F-4A95-A110-63AD194A0709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB9A65B-9F4F-4A95-A110-63AD194A0709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB9A65B-9F4F-4A95-A110-63AD194A0709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
