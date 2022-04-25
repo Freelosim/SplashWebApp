@@ -1,11 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SplashWebApp.Logic;
 using SplashWebApp.Models;
 using System.Diagnostics;
+
 
 namespace SplashWebApp.Controllers
 {
     public class HomeController : Controller
     {
+        //Hardcoded profiles & comments for testing purposes
+        Profile profile1 = new Profile(1, "Rakan","The Charmer", DateTime.Now, "Rakan#1234", "RakanYT");
+        Profile profile2 = new Profile(2, "Xayah", "The Rebel", DateTime.Now, "Xayah#5678", "XayahYT");
+        Profile profile3 = new Profile(3, "Kai'Sa", "Daugther of the Void", DateTime.Now, "Kaisa#2138", "KaisaYT");
+        Profile profile4 = new Profile(4, "Lee Sin", "The Blind Monk", DateTime.Now, "LeeSin#9873", "LeeSinYT");
+        Profile profile5 = new Profile(5, "Riven", "The Broken Blade", DateTime.Now, "Riven#0420", "RivenYT");
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
