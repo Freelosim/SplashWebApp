@@ -27,7 +27,7 @@ namespace SplashWebApp.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Profile()
         {
             var profile = profile1;
             return View(profile);
