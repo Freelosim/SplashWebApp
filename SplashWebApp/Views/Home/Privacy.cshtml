@@ -3,6 +3,27 @@
 @{
     ViewData["Title"] = "Privacy Policy";
 }
+@{
+    var profile = ViewData.Model;
+}
 <h1>@ViewData["Title"]</h1>
 
-<label asp-for="ProfileName"></label>
+
+<table>
+        <tr>
+            <th>Name</th>
+            <th>Member since</th>
+            <th>Description</th>
+            <th>Discord</th>
+            <th>Youtube</th>
+        </tr>
+        <tr>
+            <td>@profile.ProfileName</td>
+            <td>@profile.Created</td>
+            <td>@profile.ProfileDesc</td>
+            <td>@profile.Discord</td>
+            <td>@profile.Youtube</td>
+        </tr>
+</table>
+
+<h1>@profile.ProfileName</h1>

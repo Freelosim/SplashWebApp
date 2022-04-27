@@ -29,7 +29,8 @@ namespace SplashWebApp.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            var profile = profile1;
+            return View(profile);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
