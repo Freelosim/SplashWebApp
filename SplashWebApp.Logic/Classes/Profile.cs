@@ -5,7 +5,7 @@
         public int ProfileID { get; set; }
         public string ProfileName { get; set; }
         public string ProfileDesc { get; set; }
-        public DateTime Created { get; set; } = DateTime.Now;
+        public DateOnly Created { get; set; } = DateOnly.FromDateTime(DateTime.Now);
         public string Discord { get; set; }
         public string Youtube { get; set; }
 

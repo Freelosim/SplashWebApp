@@ -1,29 +1,13 @@
-﻿@using SplashWebApp.Logic
-@model Profile
-@{
-    ViewData["Title"] = "Privacy Policy";
-}
-@{
+﻿@{
+    @using SplashWebApp.Controllers
+    @using SplashWebApp.Logic;
+    @model Profile
     var profile = ViewData.Model;
 }
-<h1>@ViewData["Title"]</h1>
 
 
-<table>
-        <tr>
-            <th>Name</th>
-            <th>Member since</th>
-            <th>Description</th>
-            <th>Discord</th>
-            <th>Youtube</th>
-        </tr>
-        <tr>
-            <td>@profile.ProfileName</td>
-            <td>@profile.Created</td>
-            <td>@profile.ProfileDesc</td>
-            <td>@profile.Discord</td>
-            <td>@profile.Youtube</td>
-        </tr>
-</table>
-
-<h1>@profile.ProfileName</h1>
+<H1>@profile.ProfileName</H1>
+<p>@profile.Created</p>
+<p>@profile.ProfileDesc</p>
+<p>@profile.Discord</p>
+<p>@profile.Youtube</p>
