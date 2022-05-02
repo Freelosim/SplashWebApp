@@ -1,4 +1,5 @@
 ﻿@{
+    @model SplashWebApp.Logic.Profile;
     ViewData["Title"] = "Home Page";
 }
 
@@ -24,8 +25,10 @@
 </div>
 
 <div>
-    <form asp-controller="Home" asp-action="PostData">
-        <input  id="f0"  name="f0" form="TableF" class="btn btn-primary" type="submit" value=""/>
+    <form asp-controller="Home" asp-action="GetInput" method="post">
+        <label asp-for="ProfileName"></label>
+        <input asp-for="ProfileName" placeholder="Input name" id="test"/>
+        <input type="submit" />
     </form>
 </div>
 

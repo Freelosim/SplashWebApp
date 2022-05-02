@@ -50,14 +50,9 @@ namespace SplashWebApp.Controllers
 
         public IActionResult Profile()
         {
-
+            
             var profile = ProfileByName("Xayah");
             return View(profile);
-        }
-
-        public IActionResult Login()
-        {
-            return RedirectToAction("Profile");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
